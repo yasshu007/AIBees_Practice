@@ -46,7 +46,7 @@ prompt_template = ChatPromptTemplate.from_template(
     2. Capture the life-cycle of the incident in short and professional language.
     3. Re-write the steps as instructions.
     4. If there are multiple scenarios involved, split and construct the summary accordingly 
-    
+    5. Please do not use more prediction or hallucination and wrote the summary in effective way.
     Format your response in the format of a knowledge article:
     
     Category:{Category} | Sub-Category: {Subcategory}
@@ -62,7 +62,7 @@ prompt_template = ChatPromptTemplate.from_template(
 chain = prompt_template | llm
 
 
-st.title("AI Bees - Operational Assistant")
+st.title("Yashraj's - Operational Assistant")
 
 
 
