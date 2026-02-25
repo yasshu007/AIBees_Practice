@@ -1,0 +1,105 @@
+Issue_Description,Category,Subcategory,Assignment_group,Resolution_Notes,Incident_Summary
+Performance issue in Oracle DB,Database,Oracle,Service Desk,"Performance issue in Oracle DB due high CPU usage in oracle DB due to inefficient query execution.
+Resolution:
+Execution plans optimized and indexes added.Post implementation system performance is normal.","Category:Database | Sub-Category: Oracle
+---
+**Incident Summary & Resolution:**
+
+*   **Issue:** The Oracle Database experienced significant performance degradation, primarily characterized by elevated CPU utilization.
+*   **Diagnosis:** Investigation revealed that the high CPU consumption was directly attributable to inefficient execution plans of critical SQL queries within the database.
+*   **Resolution Actions:** The incident was resolved through a targeted approach involving two key interventions:
+    1.  Optimization of the execution plans for the identified inefficient queries.
+    2.  Strategic implementation of new database indexes to facilitate faster data retrieval.
+*   **Verification:** Following the implementation of these changes, comprehensive monitoring confirmed that the system's performance normalized, with CPU utilization returning to expected operational levels.
+
+---
+**Resolution Steps:**
+
+*   **Identify Performance Bottlenecks:** Utilize database performance monitoring tools (e.g., AWR reports, ASH reports, SQL tracing) to pinpoint specific SQL queries or processes that are consuming high CPU and contributing to overall performance degradation.
+*   **Analyze Execution Plans:** For the identified inefficient queries, retrieve and meticulously analyze their current execution plans to understand data access paths, resource consumption, and identify areas for optimization.
+*   **Optimize Query Execution Plans:** Implement necessary modifications to improve the efficiency of the query execution plans. This may involve rewriting SQL statements, adjusting join orders, or leveraging appropriate database features.
+*   **Implement Database Indexes:** Based on the execution plan analysis, strategically create new database indexes or modify existing ones to enhance the speed and efficiency of data retrieval for the optimized queries.
+*   **Validate Performance Improvement:** Conduct post-implementation performance testing and continuous monitoring to confirm that CPU utilization has decreased and overall database performance has returned to acceptable and stable levels.
+---"
+webmail unable to access links,Password Reset,Webmail,Service Desk,"Issue:  webmail unable to access links
+
+Resolution
+
+1. Confirm the Email Provider:
+Identified which email service you're using (e.g., Gmail, Outlook, Yahoo).
+
+2. Initiate Password Reset:
+Followed the specific password reset process for user email provider, which will take to recovery link.
+
+Receiving the Email but Can't Access:
+Verified the Link: Ensure the link in the reset email is valid and hasn't expired.
+Clear Browser Cache/Cookies: Cached data can sometimes interfere with the reset process.
+
+Able to open links in emails","Category:Password Reset | Sub-Category: Webmail
+---
+**Issue Summary:**
+Users may encounter an issue where they are unable to access links within their webmail interface. This often occurs when attempting to utilize a password reset or recovery link received via email, and can be attributed to expired links or browser cache/cookie interference.
+
+**Incident Life-Cycle:**
+The incident commenced with a user reporting an inability to open links within their webmail, specifically impacting their attempt to access a password recovery link. The support team initiated the appropriate password reset procedure for the user's email provider and then proceeded with browser-level troubleshooting steps. The resolution involved verifying the validity of the recovery link and clearing browser cache and cookies, successfully restoring the user's ability to access all links within their emails.
+
+**Resolution Steps:**
+
+*   **Scenario A: Initiating a Password Reset for Webmail Access**
+    1.  **Confirm Email Provider**: Identify the specific email service the user is utilizing (e.g., Gmail, Outlook, Yahoo, etc.).
+    2.  **Initiate Password Reset Process**: Guide the user through the designated password reset procedure for their identified email provider to generate and receive a recovery link.
+
+*   **Scenario B: Unable to Access Links (including Password Reset Links) within Webmail Email**
+    1.  **Verify Link Validity**: Ensure the link in question (e.g., the password reset link) is valid and has not expired.
+    2.  **Clear Browser Cache and Cookies**: Instruct the user to clear their web browser's cache and cookies. Accumulated browser data can frequently interfere with link functionality.
+    3.  **Re-attempt Link Access**: After clearing browser data, advise the user to attempt opening the link again.
+
+---"
+Poor Merge and Conflict Resolution,Inquiry_Help,Internal Application,Service Desk,Use third-party merge tools for conflict resolution. Migrate to a system like Git or TFVC with built-in merge tracking.,"Category:Inquiry_Help | Sub-Category: Internal Application
+---
+Resolution Steps:
+This incident addresses challenges with inefficient merge processes and inadequate conflict resolution experienced within an internal application. The resolution outlines a dual approach to enhance these critical operations: providing immediate tactical improvements for the current environment and a strategic long-term solution through system migration.
+
+*   **Scenario 1: Tactical Enhancement for Existing System**
+    *   **Action:** Evaluate and integrate a suitable third-party merge tool (e.g., KDiff3, Beyond Compare, Meld) into your current development or data management workflow.
+    *   **Benefit:** These specialized tools offer advanced visual comparison and merging functionalities, significantly improving the precision and efficiency of conflict resolution within the existing internal application environment.
+
+*   **Scenario 2: Strategic Long-Term Solution**
+    *   **Action:** Initiate a comprehensive strategic review and planning process for migrating to a modern and robust version control system (VCS), such as Git or Team Foundation Version Control (TFVC).
+    *   **Benefit:** Modern VCS platforms are designed with advanced built-in merge tracking, superior branching strategies, and integrated conflict resolution mechanisms. This migration will fundamentally address the root causes of ""poor merge and conflict resolution,"" leading to significantly improved code/data management, collaboration, and overall system reliability.
+---"
+Lack of Atomic Commits,Inquiry_Help,Internal Application,Service Desk,"Avoid large check-in; break changes into smaller, manageable chunks. Sitch to a modern VCS Like GIT, which guarantees atomic commits","Category:Inquiry_Help | Sub-Category: Internal Application
+---
+**Problem Addressed:** This article provides guidance and best practices for addressing issues related to the lack of atomic commits within an internal application's version control system, aiming to improve code integrity and streamline change management processes.
+
+---
+Resolution Steps:
+
+*   **Implement Atomic Commit Best Practices:**
+    *   **Granular Commits:** Always ensure that each commit represents a single, complete, and logically independent change. Avoid bundling unrelated modifications or large sets of changes into a single commit.
+    *   **Incremental Development:** Break down larger features, bug fixes, or refactoring efforts into smaller, manageable chunks. Commit each of these chunks individually once they are stable and functionally complete. This approach simplifies code reviews, makes rollbacks easier, and enhances the overall traceability of changes.
+
+*   **Migrate to a Modern Version Control System (VCS):**
+    *   **System Evaluation:** For environments where the current VCS does not inherently guarantee atomic commits, it is strongly recommended to evaluate and plan for a migration to a modern system.
+    *   **Git Adoption:** Consider adopting a modern VCS such as Git. Git is designed to enforce atomic operations, ensuring that all changes within a commit are applied as a single, indivisible unit or not at all. This significantly enhances data integrity, improves branching and merging capabilities, and fosters more efficient team collaboration and code stability.
+---"
+File Corruption,Inquiry_Help,Internal Application,Service Desk,Use the Analyze.exe utility (included with sourcesafe) to detect and repair corruption. Restore from a backup if corruption is irreparable. Migrate to a modern version control system,"Category:Inquiry_Help | Sub-Category: Internal Application
+---
+Issue: File Corruption within Internal Application (SourceSafe)
+
+Resolution Summary:
+This article outlines the comprehensive approach for resolving file corruption issues encountered in internal applications, particularly within legacy version control systems such as SourceSafe. The resolution process prioritizes an initial attempt at automated repair, followed by data restoration from a verified backup if the corruption is irreparable. A critical long-term recommendation for system migration is also provided to enhance stability and prevent future occurrences.
+
+Resolution Steps:
+
+*   **Scenario 1: Detecting and Repairing Corruption**
+    *   **Step 1.1:** Locate and execute the `Analyze.exe` utility. This tool is typically included within the SourceSafe installation directory or distribution package.
+    *   **Step 1.2:** Run `Analyze.exe` against the affected SourceSafe database or specific corrupted files. Follow the utility's instructions to perform a thorough scan, detect, and attempt to repair any identified corruption.
+
+*   **Scenario 2: Irreparable Corruption**
+    *   **Step 2.1:** If the `Analyze.exe` utility is unable to successfully repair the corruption, or if the issue persists after its execution, initiate a restore operation.
+    *   **Step 2.2:** Restore the affected files or the entire SourceSafe database from the most recent, verified, and uncorrupted backup. Ensure the integrity of the backup before proceeding with the restoration to prevent further data loss.
+
+*   **Long-Term Recommendation for Prevention and System Improvement**
+    *   **Step 3.1:** To mitigate the inherent risks associated with legacy systems and to leverage improved features, stability, and security, it is highly recommended to plan and execute a migration from the current legacy version control system (e.g., SourceSafe) to a modern version control platform.
+---"
